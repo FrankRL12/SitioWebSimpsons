@@ -1,0 +1,207 @@
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#loader-container img {
+  width: 120px;
+  height: 120px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cargando{
+  font-family: 'Bangers', cursive;
+  color: #ffee00;
+  text-shadow: 2px 2px #000000;
+}
+
+
+body {
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ff007b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.menu {
+  color: #fff;
+  text-align: center;
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #c4005f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d65a01, #c90061); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo{
+  font-family: 'Bangers', cursive;
+  color: #ffee00;
+  text-shadow: 2px 2px #000000;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+li {
+  display: inline-block;
+}
+
+.link{
+  display: block;
+  padding: 10px;
+  font-family: 'Bangers', cursive;
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 2px 2px #000000;
+}
+.link:hover{
+  transform: scale(1);
+  animation: agrandar 3s;
+}
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+@media (max-width: 767px) {
+    nav {
+      text-align: center;
+    }
+}
+.Titulo-principal{
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+  color: #FFD700;
+  text-shadow: 2px 2px #000000;
+}
+.descripcion{
+  font-family: 'Bangers', cursive;
+  font-size: 15px;
+  color: #ffffff;
+}
+.reproducir{
+  text-decoration: none;
+  background-color: #fdcb00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 #f0c14b;
+  transition: 3ms;
+}
+.reproducir:hover{
+  background-color: #be9800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 #8d6602;
+  transition: 3ms;
+}
+.principal-des{
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.cards{
+  padding: 15px;
+}
+.card{
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #c4005f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d65a01, #ff007b);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card-title{
+  font-family: 'Bangers', cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px #000000;
+}
+.card-text{
+  font-family: 'Bangers', cursive;
+  color: #fff;
+}
+.Titulo-2{
+  font-family: 'Bangers', cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px #000000;
+  font-size: 60px;
+}
+.Temporadas{
+  font-family: 'Bangers', cursive;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  font-size: 30px;
+}
+.card-1{
+  height: 60%;
+}
+footer{
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ff0b81);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d65a01, #ff007b);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.informe{
+  font-family: 'Bangers', cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px #000000;
+}
+.localizacion{
+  font-family: 'Bangers', cursive;
+  color: #ffffff;
+}
+.redes{
+  font-family: 'Bangers', cursive;
+  color: #ffffff;
+}
